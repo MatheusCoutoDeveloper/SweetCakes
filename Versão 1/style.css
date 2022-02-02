@@ -1,0 +1,664 @@
+/*
+Theme Name: My Sweet Cakes
+Theme URI: http://oliveiracomunicacao.com.br
+Author: Matheus Couto
+Author URI: http://oliveiracomunicacao.com.br
+Description: Tema desenvolvido por Oliveira Comunicação.
+Version: 1.0
+*/
+
+/*
+Theme Name: My Sweet Cakes
+Theme URI: http://oliveiracomunicacao.com.br
+Author: Matheus Couto
+Author URI: http://oliveiracomunicacao.com.br
+Description: Tema desenvolvido por Oliveira Comunicação.
+Version: 1.0
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 0;
+}
+html,
+body {
+  height: 100%;
+}
+/*       
+        Utilitarian Class
+*/
+.clear {
+  clear: both;
+}
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.center-home {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+/*
+        HEADER
+*/
+
+#HEADER {
+  width: 100%;
+  height: 208px;
+}
+#HEADER .banner {
+  margin: 0 2.5%;
+  position: relative;
+  width: 35%;
+  height: 208px;
+  z-index: 2;
+  position: relative;
+}
+#HEADER .logo {
+  float: left;
+  width: 20%;
+  margin-top: 10px;
+  position: relative;
+  z-index: 3;
+}
+#HEADER .logo .img {
+  width: 135px;
+  height: 138px;
+}
+#HEADER .menu-header {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #979797;
+  height: 55px;
+  padding: 5px 2%;
+  position: absolute;
+  margin-top: -40px;
+  z-index: 4;
+}
+#HEADER .menu-header ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+}
+#HEADER .menu-header ul li {
+  display: inline-block;
+  border-right: 1px solid #c8c8c8;
+  padding: 0 10px;
+}
+#HEADER .menu-header ul li a {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5em;
+  color: #6f6f6f;
+  text-decoration: none;
+}
+
+#HEADER .menu-header ul li a:hover {
+  background: #a8e6cf;
+}
+
+#HEADER .lan a {
+  margin: 0 5px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.2em;
+  color: #6f6f6f;
+  text-decoration: none;
+}
+#HEADER .lan a:hover {
+  background: #a8e6cf;
+}
+#HEADER .lan {
+  position: relative;
+  margin-top: -70px;
+  margin-right: 10%;
+  z-index: 4;
+}
+
+#HEADER .menu-responsive {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: none;
+  margin-top: -2.5px;
+}
+
+#HEADER .menu-responsive .hamburguer {
+  position: relative;
+  display: none;
+  background: #6f6f6f;
+  width: 15px;
+  height: 2px;
+  top: 17px;
+  left: 10px;
+  transition: 0.5s ease-in-out;
+}
+.hamburguer:before,
+.hamburguer:after {
+  background: #6f6f6f;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+#HEADER .menu-responsive .hamburguer {
+  cursor: pointer;
+}
+
+.hamburguer:before {
+  top: -6px;
+}
+
+.hamburguer:after {
+  bottom: -6px;
+}
+input {
+  display: none;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+/*
+        IMAGEM-BANNER
+*/
+
+#IMG-BANNER {
+  width: 100%;
+  height: auto;
+}
+#IMG-BANNER img {
+  width: 100%;
+  max-height: 1080px;
+}
+
+/*
+        CAKES
+*/
+
+#PRODUCTS {
+  width: 100%;
+  background: url(http://oliveiracomunicacao.com.br/clientes/sweet-cakes/wp-content/uploads/2021/02/fundo-cakes.jpg);
+  background-repeat: repeat;
+  padding: 0 10%;
+  padding-top: 10%;
+  position: relative;
+}
+.intro-cakes {
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.8);
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.intro-cakes img {
+  width: 143px;
+  height: 109px;
+}
+.intro-cakes h4 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 37px;
+  color: rgb(252, 226, 176);
+  margin: 20px 0;
+}
+
+.intro-cakes p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #6f6f6f;
+}
+.recipe {
+  border: 0.5px solid #e8e8e8;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.image-cake {
+  width: 55%;
+  display: inline-block;
+}
+
+.larger img {
+  width: 100%;
+  min-height: 384px;
+}
+.smaller img {
+  width: 100%;
+  min-height: 183px;
+}
+.description-cake {
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.description-cake {
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.description-cake h4 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #6f6f6f;
+}
+.description-cake p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  color: #a6a6a6;
+}
+#CAKES,
+#DESSERTS {
+  margin-bottom: 100px;
+}
+
+#OTHERS {
+  margin-bottom: 40px;
+}
+/*
+        FOOTER
+*/
+
+#FOOTER {
+  background: #f8f6fc;
+  height: 72px;
+  text-align: center;
+  padding-top: 25px;
+}
+#FOOTER p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9f9f9f;
+}
+
+@media screen and (max-width: 732px) {
+  .menu-header ul {
+    display: none;
+  }
+  #HEADER .menu-responsive .hamburguer {
+    display: block;
+  }
+  #HEADER .menu-responsive {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 990px) {
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+  .recipe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 988px) {
+  .description-cake h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1207px) {
+  .description-cake h4 {
+    font-size: 15px;
+  }
+}
+/*
+        ABOUT
+*/
+.content {
+  background: url(img/fundo-cakes.jpg);
+}
+.banner-about {
+  background: url(img/cakes-about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 282px;
+  text-align: center;
+}
+.banner-about h3 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 107px;
+  letter-spacing: 0.2em;
+  color: #fce2b0;
+  padding-top: 75px;
+}
+.team p {
+  margin: 50px 20%;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #6f6f6f;
+}
+.team-qualy {
+  height: 85px;
+  margin: 40px 7%;
+  text-align: center;
+}
+.team-qualy .image-fig {
+  display: inline-block;
+  width: 25%;
+  position: relative;
+}
+.team-qualy .image-fig img {
+  width: 80px;
+  height: auto;
+  margin-top: -85px;
+}
+
+.team-qualy .info-team-qualy {
+  display: inline-block;
+  width: 65%;
+  position: relative;
+}
+.team-qualy .info-team-qualy h4 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #1c1c1c;
+}
+.team-qualy .info-team-qualy p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #6f6f6f;
+  text-align: left;
+  width: 90%;
+  margin: 5px 10%;
+}
+.conclusion {
+  margin: 70px 12%;
+}
+.info-conclusion {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #6f6f6f;
+  margin-top: 60px;
+}
+.info-conclusion p {
+  text-align: left;
+  width: 70%;
+}
+.image2 {
+  margin-top: 30px;
+  margin-left: 5%;
+}
+.conclusion img {
+  width: 40%;
+  height: auto;
+}
+.social {
+  margin-top: 60px;
+}
+.social h4 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: 0.2em;
+  color: #d2562f;
+}
+.icons-social {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.icons-social .facebook {
+  margin-left: 30px;
+}
+.icons-social .instagram img {
+  width: 47px;
+  height: 47px;
+}
+.icons-social .facebook img {
+  width: 30px;
+  height: 52px;
+}
+@media screen and (max-width: 990px) {
+  .conclusion {
+    margin-top: 350px;
+    text-align: center;
+  }
+  .space {
+    margin: 30px 0;
+  }
+}
+@media screen and (max-width: 396px) {
+  .conclusion {
+    margin-top: 450px;
+  }
+}
+
+/*
+
+Contact
+
+*/
+
+.banner-contact {
+  background: url(img/bannercontact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 282px;
+  text-align: center;
+}
+
+.banner-contact h3 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 107px;
+  letter-spacing: 0.2em;
+  color: #fce2b0;
+  padding-top: 75px;
+}
+
+.description-contact {
+  padding: 55px 0;
+  text-align: center;
+}
+.description-contact p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #6f6f6f;
+}
+
+.contact-categories {
+  margin: 0 20%;
+}
+.borders {
+  border-left: 1px solid rgba(219, 165, 157, 0.81);
+  border-right: 1px solid rgba(219, 165, 157, 0.81);
+}
+.box-contact h5 {
+  margin-top: 10px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #dba59d;
+}
+.box-contact p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #6f6f6f;
+  padding: 20px 20px 10px 20px;
+}
+
+.map {
+  margin: 80px 0;
+  max-width: 937px;
+  height: auto;
+  background: #ccc;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 909px) {
+  .map {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .content h3 {
+    font-size: 60px;
+  }
+}
+/* 
+
+
+Style for Pages: Cakes, Desserts and Others. 
+
+
+
+*/
+.SECTION-HEAD {
+  text-align: center;
+  margin-top: -70px;
+}
+
+.SECTION-HEAD h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 107px;
+  letter-spacing: 0.2em;
+  color: #fce2b0;
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+.SECTION-HEAD p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.8);
+  margin-top: 40px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.SECTION-HEAD .banner-name {
+  margin: 0;
+}
+.banner-name img {
+  margin: 0 -2px;
+  width: 26%;
+  height: 282.5px;
+  position: relative;
+}
+
+.info-banner-post {
+  width: 24%;
+  height: 252.33px;
+  background: #fbe6e1;
+  position: relative;
+  margin-top: -265px;
+  margin-left: 165px;
+}
+.info-banner-post p {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #2c2c2c;
+  background: #fbe6e1;
+  border: 1px solid #fb8e74;
+  box-sizing: border-box;
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding: 5px;
+}
+.posts-product .color-red {
+  background: #fbe6e1;
+}
